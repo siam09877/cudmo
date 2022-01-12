@@ -91,7 +91,7 @@ def login():
   except requests.exceptions.ConnectionError:
     exit(" [!] no internet connection")
   try:
-    token = open("login.txt", "r")
+    
     menu()
   except (KeyError, IOError):
     logo()
